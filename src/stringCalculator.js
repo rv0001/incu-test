@@ -23,7 +23,8 @@ function add(numbers) {
       }
     }
   
-    const nums = numbers.split(delimiter).map(Number);
+   
+    const nums = numbers.split(delimiter).map(Number).filter(num => num <= 1000);
   
     const negatives = nums.filter(num => num < 0);
     if (negatives.length > 0) {
