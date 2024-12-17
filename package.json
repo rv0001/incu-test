@@ -4,7 +4,8 @@
   "description": "incu-test",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node src/stringCalculator.js"
   },
   "keywords": [],
   "author": "",
