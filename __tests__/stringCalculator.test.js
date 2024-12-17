@@ -47,4 +47,8 @@ describe('String Calculator', () => {
     expect(add("//[$$$]\n1$$$2$$$3")).toBe(6);
     expect(add("//[.*]\n1.*2.*3")).toBe(6);
   });
+
+  test('should show count of negative numbers in the error message', () => {
+    expect(() => add("1,-2,3,-4,-5")).toThrow("negative numbers not allowed: -2, -4, -5 (3 found)");
+  });
 });

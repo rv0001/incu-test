@@ -28,8 +28,8 @@ function add(numbers) {
   
     const negatives = nums.filter(num => num < 0);
     if (negatives.length > 0) {
-      throw new Error(`negative numbers not allowed: ${negatives.join(", ")}`);
-    }
+        throw new Error(`negative numbers not allowed: ${negatives.join(", ")} (${negatives.length} found)`);
+      }
   
     return nums.reduce((sum, num) => sum + num, 0);
   }
